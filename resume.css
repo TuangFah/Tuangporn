@@ -1,0 +1,403 @@
+body {
+    font-family: "Montserrat", serif, Arial, sans-serif;
+    font-size:20px; /*32,24,20*/
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+}
+.container {
+    /*min-width: 1200px;*/
+    margin: 0px 200px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 350px auto 50px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        "left header"
+        "left detail"
+        "footer footer";
+}
+.indent{text-indent: 50px;}
+
+p {
+    color: #ffffff9b;
+    line-height: 1.5;
+}
+
+.about p,
+p strong {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+strong {
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0px 0px 0px;
+}
+.section {
+    margin: 40px 0px 0px 0px;
+}
+.obj {
+    margin-top: 40px;
+}
+.section h2 {
+    border-bottom: 2px solid #f4b400;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*--left side section--*/
+.left-section {
+    grid-area: left;
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+    padding: 10px;
+}
+.about{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    }
+.avatar {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    max-width: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    margin:10px;
+}
+
+.left-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.tools span,
+.soft-skills span,
+.interests span {
+    display: inline-block;
+    background: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+/*--header section--*/
+.header {
+    /*text-align: center;*/
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+        url("img/giant-d-n-FVrx9dQG7RE-unsplash.jpg")
+        /*Photo by <a href="https://unsplash.com/@giantdwin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Giant D N</a> on <a href="https://unsplash.com/photos/a-view-of-a-city-from-the-water-FVrx9dQG7RE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+    ;
+    background-size: cover;
+    background-position: center 25%;
+    height: 80%;
+    margin-top: 50px;
+    grid-area: header;
+    border-radius: 8px;
+}
+
+/*--recent section--*/
+.recent-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.recent-list-item h3 {
+    font-weight: 300px;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/*.small-p {
+    font-size: 14px;
+}*/
+
+.recent-list-item {
+    min-height:250px;
+    min-width: 330px;
+    padding: 20px;
+    width: 100%;
+    margin: 5px;
+    aspect-ratio: 1.5 / 1;
+    
+    
+}
+
+#item1 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("./img/ex 1.png");
+    background-size: cover;
+    background-position: 40% 40%;
+}
+
+#item2 {
+    background-image: linear-gradient(to top, rgba(9, 1, 37, 0.4), rgba(1, 0, 4, 0.9)), url("./img/code.jpg");
+    background-size: cover;
+    background-position: 40% 40%;
+    backdrop-filter: blur(10px);
+}
+/*--Certificate section--*/
+.certificate-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+}
+@media (min-width: 900px) {
+    .certificate-list {
+        grid-template-columns: repeat(3, 1fr); /* Fix to 3 columns on larger screens */
+    }
+}
+.cer-image {
+    width: 100%;
+    min-width: 200px;
+    object-fit: cover;
+}
+
+.certificate {
+    position: relative;
+}
+
+.cer-label {
+    background-color: rgba(244, 180, 0, 0.8);
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px;
+    width: fit-content;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+/*--Detail Section---*/
+.detail {
+    grid-area: detail;
+}
+
+.icon {
+    margin-right: 16px;
+    width: 10px;
+}
+/*--header section--*/
+.header h1 {
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 50px;
+}
+
+h1 span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*.header p {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+}*/
+
+/*--objective section--*/
+
+/*--experience section--*/
+.experience p{
+    margin-bottom: 15px;
+}
+.date {
+    font-style: italic;
+    color: #f4b400;
+}
+
+/*.contact p {
+    margin: 5px 0;
+}*/
+
+/*.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgb(244, 180, 0);
+    color: #1e1e2f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}*/
+
+
+.activity-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-item-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    flex-grow: 1 1 auto;
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10%;
+}
+
+
+
+
+/*--footer section--*/
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #aaa;
+    grid-area: footer;
+}
+/*--animation+botton--*/
+#icon-click{
+    width:20px;
+}
+.botton {
+    padding: 10px 10px;
+    background-color: #f4b400;
+    border-radius: 100%;
+    width: fit-content;
+    margin: 20px;
+}
+.botton-list {
+    position: fixed;
+    /*---มันอยู่ที่เดิมตลอดเวลาเลื่อนด้วย!!!-------*/
+    right: 72px;
+    bottom: 60px;
+}
+
+.hover-elevate {
+    transition: box-shadow 0.1s ease-out 0s, transform 0.1s ease-out 0s;
+    /*คือแบบ จะดีเลย์นิดหน่อย คล้ายๆอนิเมต*/
+    cursor: pointer;
+    /*เปลี่ยนเป็นรูปมือ เวลาชี้*/
+}
+.hover-elevate:hover {
+    box-shadow: rgba(230, 230, 230, 0.15) 0px 16px 16px 0px,
+        /*อ่านเพิ่มตรงไสตล์ได้ใน box shadow*/
+        rgba(200, 200, 200, 0.07) 0px 8px 8px 0px,
+        rgba(213, 213, 213, 0.07) 0px 4px 4px 0px,
+        rgba(212, 211, 211, 0.07) 0px 2px 2px 0px,
+        rgba(211, 210, 210, 0.07) 0px 64px 64px 0px,
+        rgba(220, 220, 220, 0.07) 0px 32px 32px 0px;
+    transform: translateY(-10px);
+}
+
+.hover-elevate:active {
+    box-shadow: none;
+}
+
+@media screen and (max-width:1500px){
+    body{
+        font-size: 18px;
+    }
+    .section h2 {
+        font-size: 30px;
+    }
+    .container{
+        margin: 0px 100px;
+    }
+    /*.p{
+        line-height: 1.5;
+    }*/
+}
+@media screen and (max-width:1200px){
+    body{
+        font-size: 18px;
+    }
+    .section h2 {
+        font-size: 28px;
+    }
+    .container{
+        margin: 0px 50px;
+    }
+    /*.p{
+        line-height: 1.5;
+    }*/
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 18px;
+    }
+    .section h2 {
+        font-size: 26px;
+    }
+    .container{
+        margin: 0px 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .obj {
+        margin-top: 20px;
+    }
+    .about{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        }
+    
+    .recent-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .recent-list-item {
+        aspect-ratio: 2.5 / 1;
+        object-position: center 100%;
+        
+}}
+@media screen and (max-width:500px){
+    body{
+        font-size: 18px;
+    }
+    .section h2 {
+        font-size: 24px;
+    }
+    .container{
+        margin: 0px 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .obj {
+        margin-top: 20px;
+    }
+.about{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr;
+    place-items: center;
+    }
+    .p{
+        line-height: 1.6
+
+}
+.botton-list {
+    right: 20px;
+    bottom: 30px;}}

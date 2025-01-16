@@ -218,8 +218,9 @@ h1 span {
 /*--objective section--*/
 
 /*--experience section--*/
-
-}
+/*.experience p{
+    margin-bottom: 15px;
+}*/
 #date {
     font-style: italic;
     color: #f4b400;
@@ -401,6 +402,6 @@ h1 span {
 .botton-list {
     right: 20px;
     bottom: 30px;}
-.header h1{
-    padding:20px;
+    .header h1{
+padding:20px;
     }}

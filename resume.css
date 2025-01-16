@@ -218,12 +218,12 @@ h1 span {
 /*--objective section--*/
 
 /*--experience section--*/
-.experience p{
-    margin-bottom: 15px;
+
 }
 .date {
     font-style: italic;
     color: #f4b400;
+    margin-bottom:20px;
 }
 
 /*.contact p {
